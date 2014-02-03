@@ -482,11 +482,11 @@ header {
                .menu-items {
                     width: 100%;
                     -webkit-column-count: 2;
-                    -webkit-column-gap: 4em;
+                    -webkit-column-gap: 5em;
                     -moz-column-count: 2;
-                    -moz-column-gap: 4em;   
+                    -moz-column-gap: 5em;   
                     column-count: 2;
-                    column-gap: 4em;
+                    column-gap: 5em;
                     > * {
                         break-inside: avoid;
                         -webkit-column-break-inside: avoid;
@@ -517,7 +517,7 @@ header {
                             column-count: 1;
                         }
                     }
-                    &.odd .bk0-columns {
+                    &.bk0-columns {
                         -webkit-column-count: 1;
                         -moz-column-count: 1;
                         column-count: 1;
@@ -540,6 +540,7 @@ header {
                                 .inner-item {
                                     h3 {
                                         padding: 0 0 0 30px;
+                                        color: @color-swatch3;
                                     }
                                     &:after {
                                         content: "\2605";
