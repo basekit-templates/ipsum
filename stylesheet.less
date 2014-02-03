@@ -251,7 +251,7 @@ header .wrapper .companyheader {
 
 header {
     background-color: transparent;
-    padding: 2.5em 0 1.5em;
+    padding: 2.5em 0 0;
     text-align: center;
     .wrapper {
         position: relative;
@@ -430,7 +430,7 @@ header {
 .widget {
     &.menu {
         background-color: @color-swatch2;
-        margin-top: 0.2em;
+        margin-top: 0.3em;
         float: left;
         .main {
             padding: 0;
@@ -513,17 +513,19 @@ header {
                             -moz-column-count: 1;
                             column-count: 1;
                         }
-                        &.bk1-columns {
-                            -webkit-column-count: 1;
-                            -moz-column-count: 1;
-                            column-count: 1;
-                            li {
-                                &.menu-item-promoted { 
-                                    display: block;
-                                }
+                    &.bk1-columns {
+                        -webkit-column-count: 1;
+                        -moz-column-count: 1;
+                        column-count: 1;
+                        li {
+                            &.menu-item-promoted { 
+                                display: block;
                             }
                         }
                     }
+
+                    }
+
 
                     li { /* menu-item */
                         position: relative;
@@ -543,7 +545,7 @@ header {
                                         position: absolute;
                                         top: 1.1em;
                                         left: 0em;
-                                        color: @color-swatch4;
+                                        color: @color-swatch3;
                                     }
                                 }
                         }/* end menu-item-promoted */
