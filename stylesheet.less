@@ -457,24 +457,24 @@ header {
 
             /* SECTION AND SUB-SECTION HEADERS */
 
-                .menu-header, .menu-subsection-header {
-                    margin: 0;
-                    padding: 4em 0 0.5em;
-                    @media @tablet {
-                        padding: 2em 0 0.5em;
-                    }
-                    border-bottom: 1px solid @color-swatch5;
-                    text-align: left;
-                    h1 { /* menu-name */
-                        padding: 0;
-                    }
-                    h2 { /* MENU-SUBSECTION-HEADER */
-                        padding: 0;
-                    }
-                    p { /* description */
-                        padding: 5px 0 0; 
-                    }
-                } /* end MENU-HEADER AND SUB-SECTION HEADER */
+            .menu-header, .menu-subsection-header {
+                margin: 0;
+                padding: 4em 0 0.5em;
+                @media @tablet {
+                    padding: 2em 0 0.5em;
+                }
+                border-bottom: 1px solid @color-swatch5;
+                text-align: left;
+                h1 { /* menu-name */
+                    padding: 0;
+                }
+                h2 { /* MENU-SUBSECTION-HEADER */
+                    padding: 0;
+                }
+                p { /* description */
+                    padding: 5px 0 0; 
+                }
+            } /* end MENU-HEADER AND SUB-SECTION HEADER */
 
 
             /* ITEMS */
@@ -517,7 +517,7 @@ header {
                             column-count: 1;
                         }
                     }
-                    &.bk0-columns {
+                    &.odd .bk0-columns {
                         -webkit-column-count: 1;
                         -moz-column-count: 1;
                         column-count: 1;
@@ -534,6 +534,7 @@ header {
                         text-align: left;
                         padding: 0;
                         margin-bottom: 0;
+                        border-bottom: 1px dotted fade(@color-swatch5,20%);
                         &.menu-item-promoted { /* menu-item-promoted */
                                 display: inline-block;
                                 .inner-item {
@@ -628,7 +629,7 @@ header {
                                 float: left;
                                 width: 100%;
                                 margin-top: 0px;
-                                padding: 0;
+                                padding: 0 0 0 1px;
                                .dietary-icon {
                                     background-color: @color-swatch2;
                                     width: auto;
@@ -710,18 +711,6 @@ header {
                     } /* end li menu-item */
 
                 } /* end ol */  
-
-
-                .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
-                    position: relative;
-                    border: none;
-                    .menu-subsection-header {
-                        h2 { /* menu-section-name */
-                            color: @color-swatch4;
-                        }
-                    }
-                        
-                } /* end PROMOTED SUB-SECTION */
 
                 .menu-info {
                     display: inline-block;
