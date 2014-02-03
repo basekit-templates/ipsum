@@ -1,7 +1,7 @@
 {
     "name":"IPSUM",
-    "thumbnail":"cerisekitchen.png",
-    "screenshot":"cerisekitchen.png",
+    "thumbnail":"ipsum.png",
+    "screenshot":"ipsum.png",
     "tags": {
     "en": ["clean", "menu", "cafe", "bar", "restaurant"],
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
@@ -100,7 +100,7 @@
         "font6": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "18px",
-            "font-weight": "400",
+            "font-weight": "200",
             "line-height": "28px",
             "color": "@color-swatch6",
             "color-hover": "@color-swatch6",
