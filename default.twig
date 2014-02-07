@@ -13,12 +13,8 @@
                 </div>
             </div> 
             <div class="companyheader clearfix">
-                {% if profile.logo|length > 0 %}
-                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                {% else %}
-                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-                {% endif %}
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             </div>
             <div class="header-right">
                 {{widget('content', 'headercontentright', {"content":"<p>Lorem ip, dolor sit amet consectet</p>"})|raw}}
