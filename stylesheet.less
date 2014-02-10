@@ -241,6 +241,9 @@ body {
     }
 }
 
+.widget .extendednavigation ul li.folder:after {
+    display: none;
+}
 
 /* ===============================
    HEADER
@@ -732,14 +735,119 @@ header {
     } /* end .widget.menu */
 } /* end .widget */
 
+
 /* ===============================
-  FOOTER 
+  CONTACT FORM
    =============================== */
 
-footer {
-    text-align: center;
-    background-color: transparent;
+   .contactform fieldset {
+        border: none;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+/* ===============================
+SIGN UP FORM
+=============================== */
+
+.signupform fieldset button {
+    padding: 8px 8px 13px;
 }
+
+/* ===============================
+  TWITTER
+   =============================== */
+
+   .twitter-profile-pic {
+        float: left;
+        margin-right: 10px;
+    }
+
+/* ===============================
+  SLIDESHOW WIDGET
+   =============================== */
+
+.svg .widget.responsiveslideshow .slideshow-widget .btn-prev {
+  left: 10px;
+  background: image('/images/slideshow-arrow-left.svg') no-repeat center left;
+  background-size: contain;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
+}
+
+.svg .widget.responsiveslideshow .slideshow-widget .btn-next {
+  right: 10px;
+  background: image('/images/slideshow-arrow-right.svg') no-repeat center right; 
+  background-size: contain;   
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  background: image('/images/slideshow-arrow-right.png') no-repeat center right;   
+}
+.widget {
+    &.responsiveslideshow {
+        .content-wrapper {
+            background-color: @color-swatch2;
+            text-align: center;
+        }
+        .title {
+            display: inline-block;
+            padding:10px 15px 0 15px;
+            color: @color-swatch5;
+        }
+        .description {
+            display: block;
+            padding: 0 15px 15px;
+            color: @color-swatch5;
+        }
+        .slideshow-widget-controls .dot.selected {
+            background-color: @color-swatch3;
+        }
+    }
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.blog-post-item {
+    border-bottom: 1px dotted @color-swatch5;
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+footer .blog-post-metadata {
+    background-color: transparent;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    text-align: left;
+}
+
+.blog-post-more-link {
+float: left;
+width: 100%;
+}
+
 
 /* ===============================
   SOCIAL ICONS 
@@ -771,3 +879,13 @@ hr {
     }
 }
 
+
+
+/* ===============================
+  FOOTER 
+   =============================== */
+
+footer {
+    text-align: center;
+    background-color: transparent;
+}
