@@ -812,8 +812,15 @@ SIGN UP FORM
   BLOG
    =============================== */
 
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+    }
+}
+
 .blog-post-item {
-    border-bottom: 1px dotted @color-swatch5;
     margin: 1.5em 0;
     padding-bottom: 1em;
     h2 {
@@ -832,7 +839,7 @@ SIGN UP FORM
     }
 }
 
-footer .blog-post-metadata {
+.blog-post-metadata {
     background-color: transparent;
     margin-top: 0;
     text-align: left;
