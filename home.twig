@@ -3,6 +3,9 @@
 
 {% block content %}
 
+{% if pages|length > 1 %}
+{{widget('extendednavigation', 'navigationheader', {})|raw}}
+{% endif %}
 <header>
     <div class="wrapper clearfix">
         <div class="header-left">
