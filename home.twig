@@ -6,7 +6,7 @@
 {% if pages|length > 1 %}
 {{widget('extendednavigation', 'navigationheader', {})|raw}}
 {% endif %}
-<header>
+<header class="bk-header">
     <div class="wrapper clearfix">
         <div class="header-left">
                 {{widget('content', 'headercontentleft', {"content":"<p>Lorem ip, dolor sit amet consectet</p>"})|raw}}
@@ -33,9 +33,9 @@
 {{widget('menu', 'menu1', {})|raw}}
 </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
-        {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
     </div>
 </footer>
 
