@@ -1,4 +1,3 @@
-
 {% extends "layout.twig" %}
 
 {% block content %}
@@ -11,7 +10,7 @@
         <div class="header-left">
                 {{widget('content', 'headercontentleft', {"content":"<p>Lorem ip, dolor sit amet consectet</p>"})|raw}}
             <div class="header-img">
-                {{widget('image', 'imageleft', { 'src': asset('images/img-left.png'), 'title': '', 'alt': '', 'fileName': 'img-left.png', 'fileSize': '58kb', 'imageSize': '275 x 152', 'imageWidth': '100%'})|raw}}
+                <img class="image" src="{{asset('/image/img-left.png')}}" width="100%">
             </div>
         </div> 
 
@@ -22,7 +21,7 @@
         <div class="header-right">
             {{widget('content', 'headercontentright', {"content":"<p>Lorem ip, dolor sit amet consectet</p>"})|raw}}
             <div class="header-img">
-            {{widget('image', 'imageright', { 'src': asset('images/img-right.png'), 'title': '', 'alt': '', 'fileName': 'img-right.png', 'fileSize': '58kb', 'imageSize': '275 x 152', 'imageWidth': '100%'})|raw}}
+                <img class="image" src="{{asset('/image/img-right.png')}}" width="100%">
             </div>
         </div>
     </div><!--end wrapper clearfix-->
