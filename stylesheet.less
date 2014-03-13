@@ -711,6 +711,12 @@ body {
    .widget.signupform fieldset input, .widget.profile form fieldset input {
         border: 1px solid darken(@color-swatch1,10%);
         background-color: #ffffff;
+        @media @tablet {
+            width: 90%;
+        }
+        @media @mobile {
+            width: 100%;
+        }
     }
     .signupform fieldset button, .widget.profile form button {
         padding: 7px 13px 11px;
