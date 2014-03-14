@@ -591,7 +591,6 @@ body {
                                 line-height:@font-swatch5-line-height;
                                 color:@font-swatch5-color;
                                 letter-spacing: @font-swatch5-letter-spacing;
-                                float: left;
                                 width: 100%;
                                 margin: 0 0 0.5em 0;
                                 padding: 0;
@@ -604,7 +603,7 @@ body {
                                 line-height:@font-swatch5-line-height;
                                 color: @font-swatch5-color;
                                 letter-spacing: @font-swatch5-letter-spacing;
-                                float: left;
+
                                 width: 100%;
                                 margin: 0;
                                 padding: 0;
@@ -614,13 +613,11 @@ body {
                                 font-weight: @font-swatch5-font-weight;
                                 line-height:@font-swatch5-line-height;
                                 color: @font-swatch5-color;
-                                float: left;
                                 width: 100%;
                                 margin: 0;
                                 padding: 0;
                             }
                             .menu-section-item-dietary-props {
-                                float: left;
                                 width: 100%;
                                 margin-top: 0px;
                                 padding: 0 0 0 1px;
@@ -716,6 +713,12 @@ body {
    .widget.signupform fieldset input, .widget.profile form fieldset input {
         border: 1px solid darken(@color-swatch1,10%);
         background-color: #ffffff;
+        @media @tablet {
+            width: 90%;
+        }
+        @media @mobile {
+            width: 100%;
+        }
     }
     .signupform fieldset button, .widget.profile form button {
         padding: 7px 13px 11px;
@@ -937,4 +940,39 @@ hr {
 .bk-footer {
     text-align: center;
     background-color: transparent;
+}
+
+/* ===============================
+   Print override
+   =============================== */
+.print-mixin {
+    .header-feature,
+    .extendednavigation,
+    .bk-footer,
+    .bk-header .widget.profile  {
+        display:none;
+    }
+    .companyheader {
+        padding:0px;
+    }
+    .menu-container {
+        display:none;
+    }
+    .menu-info {
+        margin:0px;
+    }
+    .widget.menu .main.wrapper {
+        page-break-before:always;
+    }
+    .widget.menu .menu-item-image-wrap {
+        height:150px;
+    }
+}
+
+@media print {
+    .print-mixin;
+}
+
+.bk-print {
+    .print-mixin;
 }
