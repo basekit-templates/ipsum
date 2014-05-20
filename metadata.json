@@ -2,6 +2,7 @@
     "name":"IPSUM",
     "thumbnail":"ipsum.png",
     "screenshot":"ipsum.png",
+    "templateType":"menu",
     "tags": {
     "en": ["clean", "menu", "cafe", "bar", "restaurant", "clean", "textured", "background image", "modern", "graphics", "light", "san-serif"],
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
